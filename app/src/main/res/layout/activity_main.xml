@@ -4,91 +4,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
     tools:context="com.example.asl.miniklerogreniyor.MainActivity">
 
 
     <Button
         android:id="@+id/sayibtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/meyvebtn"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bir"
+        android:backgroundTint="@android:color/holo_red_light"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/meyvebtn"
-        android:layout_marginTop="59dp"
-        android:background="@color/colorAccent"
-        android:backgroundTint="@color/colorAccent" />
+        android:layout_toLeftOf="@+id/sekilbtn"
+        android:layout_toStartOf="@+id/sekilbtn" />
 
     <Button
         android:id="@+id/meyvebtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="58dp"
-        android:layout_marginStart="58dp"
-        android:layout_marginTop="45dp"
-        android:text="MEYVELER"
-        android:layout_below="@+id/sekilbtn"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/muz"
+        android:layout_below="@+id/sayibtn"
+        android:layout_alignLeft="@+id/sayibtn"
+        android:layout_alignStart="@+id/sayibtn" />
 
     <Button
         android:id="@+id/hayvanbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
-        android:text="HAYVANLAR"
-        android:layout_below="@+id/meyvebtn"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
         android:layout_alignLeft="@+id/meyvebtn"
-        android:layout_alignStart="@+id/meyvebtn" />
+        android:layout_alignStart="@+id/meyvebtn"
+        android:layout_below="@+id/meyvebtn"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/esk" />
 
     <Button
         android:id="@+id/sekilbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/ay"
         android:layout_alignBottom="@+id/sayibtn"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginEnd="80dp"
-        android:layout_marginRight="80dp"
-        android:text="SEKİLLER" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/sayibtn" />
 
     <Button
         android:id="@+id/renkbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/hayvanbtn"
-        android:layout_alignLeft="@+id/sekilbtn"
-        android:layout_alignStart="@+id/sekilbtn"
-        android:text="RENKLER" />
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:background="@drawable/mor"
+        android:layout_alignTop="@+id/meyvebtn"
+        android:layout_alignLeft="@+id/nesnebtn"
+        android:layout_alignStart="@+id/nesnebtn" />
 
     <Button
         android:id="@+id/nesnebtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="17dp"
-        android:layout_marginStart="17dp"
-        android:text="NESNELER"
-        android:layout_alignBaseline="@+id/hayvanbtn"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
         android:layout_alignBottom="@+id/hayvanbtn"
-        android:layout_alignLeft="@+id/renkbtn"
-        android:layout_alignStart="@+id/renkbtn" />
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/meyvebtn"
+        android:layout_toRightOf="@+id/meyvebtn"
+        android:background="@drawable/df"
+        android:layout_alignTop="@+id/hayvanbtn" />
 
     <Button
         android:id="@+id/yiyecekbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
         android:layout_alignLeft="@+id/hayvanbtn"
         android:layout_alignStart="@+id/hayvanbtn"
-        android:layout_below="@+id/nesnebtn"
-        android:layout_marginTop="54dp"
-        android:text="YİYYECEKLER" />
+        android:layout_below="@+id/hayvanbtn"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/peyn" />
 
     <Button
-        android:id="@+id/içecekbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/yiyecekbtn"
+        android:id="@+id/icecekbtn"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
         android:layout_alignLeft="@+id/nesnebtn"
         android:layout_alignStart="@+id/nesnebtn"
-        android:layout_marginBottom="12dp"
-        android:text="İÇECEKLER" />
+        android:background="@drawable/prtsu"
+        android:layout_alignTop="@+id/yiyecekbtn"
+        android:layout_alignBottom="@+id/yiyecekbtn" />
 </RelativeLayout>
